@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Two arrays</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function getaverage(){
+			var ages=[];
+			var names=[];
+			var	totals=0;
+			var  average=0;
+
+		for (var n=0; n<5; n++){
+			names[n]= prompt("Enter your Name","Name");
+			ages[n]= prompt("Enter your agae in Years","years");
+			totals=totals+ parseInt(ages[n]);
+			console.log("Your Name is:"+" "+names[n]+" "+"and your age is:"+" "+ages[n]);
+			
+			console.log("The total age is:"+totals+" "+"years");
+	}
+	average=totals/5;
+			console.log("The average is:"+average+" "+"years");
+		}
+	</script>
+
+<button onclick="getaverage()" >Click to compute the average age</button>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>arrays</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		function displayitems(){
+			var items=[];
+			var	totals=0;
+			var  average=0;
+
+		for (var n=0; n<5; n++){
+			items[n]= prompt("enter an Item price","item price");
+			totals=totals+ parseInt(items[n]);
+			console.log("item price:"+ items[n]);
+			console.log("The total is:"+totals);
+	}
+	average=totals/5;
+			console.log("The average is:"+average);
+		}
+	</script>
+
+<button onclick="displayitems()" >click to enter Item prices</button>
+</body>
+</html>
